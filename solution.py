@@ -1,10 +1,40 @@
-# Напишите программу, которая выводит текст «Python is awesome!» (без кавычек) 10 раз.
+# Напишите программу, которая использует ровно три цикла for для печати следующей последовательности символов:
 
+# AAA
+# AAA
+# AAA
+# AAA
+# AAA
+# AAA
+# BBBB
+# BBBB
+# BBBB
+# BBBB
+# BBBB
+# E
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# TTTTT
+# G
+
+                  
 # Формат входных данных
 # На вход программе ничего не подаётся.
 
 # Формат выходных данных
-# Программа должна вывести 10 раз текст «Python is awesome!» (без кавычек), каждый на отдельной строке.
+# Программа должна вывести указанную последовательность символов.
 
-for i in range(10):
-    print("Python is awesome!")
+for i in range(6):
+    print("AAA")
+for i in range(5):
+    print("BBBB")
+print("E")
+for i in range(9):
+    print("TTTTT")
+print("G")

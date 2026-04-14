@@ -99,6 +99,20 @@ def Loops_Task7():
         for i in range(m, n, -1):
             print(i)
 
+def Loops_Task8():
+# На вход программе подаются два целых числа a и b (a ≤ b). 
+# Напишите программу, которая подсчитывает количество чисел в диапазоне от a до b (включительно), 
+# куб которых оканчивается на 4 или 9.
+
+    counter = 0
+
+    for i in range(int(input()), int(input()) + 1):
+        if i**3 % 10 == 4 or i**3 % 10 == 9:
+            counter += 1
+    
+    print(counter)
+
+        
 
 
 

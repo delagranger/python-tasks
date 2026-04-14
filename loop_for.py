@@ -6,8 +6,3 @@ def Loops_Task1():
     
     for i in range(10):
         print(i, string)
-
-
-
-if __name__ == "__main__":
-    Loops_Task1()

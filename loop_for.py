@@ -51,4 +51,13 @@ def Loops_Task5():
     for i in range(m, n + 1):
         print(i)
 
+def Loops_Task5():
+# Дано натуральное число n. Напишите программу, которая выводит таблицу умножения на n (от 1 до 10 включительно).
+
+    n = int(input())
+
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+
 

@@ -235,6 +235,22 @@ def Loops_Task17():
 
     print(current_max)
     print(previous_max)
+
+def Loops_Task18():
+# Напишите программу, которая считывает натуральное число n 
+# и выводит первые n чисел последовательности Фибоначчи.
+
+    first_num = 0
+    second_num = 1
+    
+    print(1, end=" ")
+
+    for _ in range(int(input()) - 1):
+        current_num = first_num + second_num
+        print(current_num, end=" ")
+        first_num, second_num = second_num, current_num
+
+
         
 
 

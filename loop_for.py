@@ -189,6 +189,20 @@ def Loops_Task14():
     
     print(total)
 
+def Loops_Task15():
+# Напишите программу, которая считывает последовательность из 10 целых чисел 
+# и определяет, является ли каждое из них чётным или нет. 
+
+    flag = True
+
+    for _ in range(10):
+        if int(input()) % 2 != 0:
+            flag = False
+    
+    result = "YES" if flag else "NO"
+    print(result)
+
+
 
         
 

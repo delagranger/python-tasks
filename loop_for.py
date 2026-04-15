@@ -217,8 +217,24 @@ def Loops_Task15():
     
     print(total)
 
+def Loops_Task17():
+# На вход программе подаются натуральное число n(n ≥ 2), 
+# а затем n различных натуральных чисел последовательности, 
+# каждое на отдельной строке. 
+# Напишите программу, которая выводит наибольшее и второе наибольшее число последовательности.
 
+    current_max = 0
+    previous_max = 0
 
+    for _ in range(int(input())):
+        n = int(input())
+        if n > current_max:
+            current_max, previous_max = n, current_max
+        elif n > previous_max and n < current_max:
+            previous_max = n
+
+    print(current_max)
+    print(previous_max)
         
 
 

@@ -1,4 +1,4 @@
 from loop_for import *
 
 if __name__ == "__main__":
-    Loops_Task10()
+    Loops_Task12()

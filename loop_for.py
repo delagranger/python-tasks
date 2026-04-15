@@ -152,6 +152,17 @@ def Loops_Task11():
 
     print(total)
 
+def Loops_Task12():
+# На вход программе подаётся натуральное число n. 
+# Напишите программу, которая вычисляет n!.
+
+    fact_n = 1
+
+    for i in range(1, int(input()) + 1):
+        fact_n *= i
+    
+    print(fact_n)
+
         
 
 

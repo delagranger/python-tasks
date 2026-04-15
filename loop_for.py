@@ -163,6 +163,19 @@ def Loops_Task12():
     
     print(fact_n)
 
+def Loops_Task13(): 
+# Напишите программу, которая считывает 10 чисел 
+# и выводит произведение отличных от нуля чисел.
+
+    total = 1
+
+    for _ in range(10):
+        n = int(input())
+        if n != 0:
+            total *= n
+    
+    print(total)
+
         
 
 

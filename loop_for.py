@@ -176,6 +176,20 @@ def Loops_Task13():
     
     print(total)
 
+def Loops_Task14(): 
+# На вход программе подаётся натуральное число n. 
+# Напишите программу, которая вычисляет сумму всех его делителей.
+
+    n = int(input())
+    total = 0
+
+    for i in range(1, n + 1):
+        if n % i == 0:
+            total += i
+    
+    print(total)
+
+
         
 
 

@@ -1,4 +1,4 @@
 from loop_while import *
 
 if __name__ == "__main__":
-    Loops_Task20()
+    Loops_Task21()

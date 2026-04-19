@@ -1,23 +1,13 @@
-def Loops_Task27():
-# На вход программе подаются четыре целых числа, 
-# которые задают временной промежуток от h₁:m₁ до h₂:m₂. 
-# Напишите программу, которая выводит все моменты времени между этими промежутками 
-# (включая границы) в формате hh:mm с интервалом в 1 минуту, каждый на отдельной строке.
+def Loops_Task28():
+# Дано натуральное число. 
+# Напишите программу, которая выводит его цифры в столбик в обратном порядке.
 
-    first_range = int(input()) * 60 + int(input())
-    second_range = int(input()) * 60 + int(input())
+    n = int(input())
 
-    while first_range <= second_range:
-        h = first_range // 60
-        if h < 10:
-            h = '0' + str(h)
-        m = first_range - first_range // 60 * 60
-        if m < 10:
-            m = '0' + str(m)
-
-        print(f"{h}:{m}")
-
-        first_range += 1
+    while n != 0:
+        last_dig = n % 10
+        print(last_dig)
+        n //= 10
 
 
 

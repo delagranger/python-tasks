@@ -1,28 +1,25 @@
-def Loops_Task26():
-# Всем известно, что ведьмак способен одолеть любых чудовищ, однако его услуги обойдутся недешево. 
-# К тому же ведьмак не принимает купюры, он принимает только чеканные монеты. 
-# В мире ведьмака существуют монеты с номиналами 1, 5, 10, 25.
+def Loops_Task27():
+# На вход программе подаются четыре целых числа, 
+# которые задают временной промежуток от h₁:m₁ до h₂:m₂. 
+# Напишите программу, которая выводит все моменты времени между этими промежутками 
+# (включая границы) в формате hh:mm с интервалом в 1 минуту, каждый на отдельной строке.
 
-# Напишите программу, которая определяет, какое минимальное количество чеканных монет нужно заплатить ведьмаку.
+    first_range = int(input()) * 60 + int(input())
+    second_range = int(input()) * 60 + int(input())
 
-    price = int(input())
-    coins_amount = 0
+    while first_range <= second_range:
+        h = first_range // 60
+        if h < 10:
+            h = '0' + str(h)
+        m = first_range - first_range // 60 * 60
+        if m < 10:
+            m = '0' + str(m)
 
-    while price != 0:
-        if price // 25 != 0:
-            coins_amount += 1
-            price -= 25
-        elif price // 10 != 0:
-            coins_amount += 1
-            price -= 10
-        elif price // 5 != 0:
-            coins_amount += 1
-            price -= 5
-        elif price // 1 != 0:
-            coins_amount += 1
-            price -= 1
-    
-    print(coins_amount)
+        print(f"{h}:{m}")
+
+        first_range += 1
+
+
 
 
             

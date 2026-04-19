@@ -1,25 +1,36 @@
-def Loops_Task29():
-# Дано натуральное число n
-# Напишите программу, которая определяет его максимальную и минимальную цифры
-
+def Loops_Task30():
+# Дано натуральное число. Напишите программу, которая вычисляет:
+#
+# - сумму его цифр;
+# - количество цифр в нем;
+# - произведение его цифр;
+# - среднее арифметическое его цифр;
+# - его первую цифру;
+# - сумму его первой и последней цифры.
+    
     n = int(input())
-    max_dig = n % 10
-    min_dig = n % 10
+    dig_sum = 0
+    dig_count = 0
+    dig_prod = 1
+    last_dig = n % 10
+    first_dig = 0
+    
 
     while n != 0:
-        last_dig = n % 10
+        curr_digit = n % 10
 
-        if last_dig > max_dig:
-            max_dig = last_dig
-        elif last_dig < min_dig:
-            min_dig = last_dig
-        
+        dig_sum += curr_digit
+        dig_count += 1
+        dig_prod *= curr_digit
+        if curr_digit < 10:
+            first_dig = curr_digit
+
         n //= 10
-    
-    print(f"Максимальная цифра равна {max_dig}")
-    print(f"Минимальная цифра равна {min_dig}")
-        
-        
+
+    digs_arth_mean = dig_sum / dig_count
+    first_and_last_dig_sum = last_dig + first_dig
+
+    print(dig_sum, dig_count, dig_prod, digs_arth_mean, first_dig, first_and_last_dig_sum, sep='\n')
     
 
 

@@ -1,4 +1,4 @@
-def loops_task36():
+def loops_task37():
     """
 Дано натуральное число n(n ≤ 9). 
 Напишите программу, которая печатает таблицу размером n × 5, 
@@ -8,7 +8,7 @@ def loops_task36():
     n = int(input())
 
     for i in range(1, n + 1):
-        for j in range(5):
-            print(i, end=" ")
+        for j in range(1, 10):
+            print(f"{i} + {j} = {i + j}")
         
         print()

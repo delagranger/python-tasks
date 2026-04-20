@@ -1,26 +1,25 @@
-def loops_task33():
+def loops_task34():
     """
-    Дано натуральное число. 
-    Напишите программу, которая определяет, является ли последовательность его цифр 
-    при просмотре справа налево упорядоченной по неубыванию.
+    На вход программе подаётся натуральное число n. 
+    Напишите программу, которая выводит для каждой четной цифры данного числа текст в следующем формате:
+    <i>-я четная цифра равна <digit>
     """
 
-    n = int(input()) 
-    flag = True
-    last_dig = n % 10
-    n //= 10
+    number = input()
+    step = 1
+    flag = False
 
-    while n != 0:
-        curr_dig = n % 10
+    for digit in number:
+        curr_dig = int(digit)
 
-        if curr_dig < last_dig:
-            flag = False
-            break
-        
-        last_dig = curr_dig
-        n //= 10
+        if curr_dig % 2 == 0:
+            print(f"{step}-я четная цифра равна {curr_dig}")
+            step += 1
+            flag = True
     
-    print("YES" if flag else "NO")
+    if not flag:
+        print("Четных цифр в числе нет")
+
 
 
 

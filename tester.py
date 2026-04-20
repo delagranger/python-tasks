@@ -1,4 +1,4 @@
-from loops import *
+from nested_loops import *
 
 if __name__ == "__main__":
-    loops_task34()
+    loops_task35()

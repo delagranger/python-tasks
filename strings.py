@@ -1,8 +1,12 @@
-def strings_task1():
+def strings_task2():
     """
-    Используя индексатор, дополните приведённый ниже код так, чтобы он вывел символ w.  
-    s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+    На вход программе подаётся одна строка. Напишите программу, которая выводит элементы строки с чётными индексами
     """
 
-    s = "In 2010, someone paid 10k Bitcoin for two pizzas."
-    print(s[-10])
+    s = input()
+
+    for i in range(len(s)):
+        if i % 2 == 0:
+            print(s[i])
+
+

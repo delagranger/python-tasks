@@ -1,4 +1,4 @@
 from strings import *
 
 if __name__ == "__main__":
-    strings_task9()
+    strings_task10()

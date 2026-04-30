@@ -104,3 +104,24 @@ def strings_task9():
             counter += 1
         
     print(counter)
+
+
+def strings_task10():
+    """
+    На вход программе подаётся одна строка с буквами русского языка. 
+    Напишите программу, которая определяет количество гласных и согласных букв
+    """
+
+    string = input()
+    vowels_counter = 0
+    consonants_counter = 0
+
+    for i in string.lower():
+        if i in 'ауоыиэяюе':
+            vowels_counter += 1
+        elif i in 'бвгджзйклмнпрстфхцчшщ':
+            consonants_counter += 1
+    
+    print(f"Количество гласных букв равно {vowels_counter}")
+    print(f"Количество согласных букв равно {consonants_counter}")
+

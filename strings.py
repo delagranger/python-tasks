@@ -201,3 +201,17 @@ def strings_task14():
 
     print(s_third_char, s_pre_last, s_starter, s_cuted, s_even_chars, 
             s_odd_chars, s_reversed, s_reversed_and_cuted, sep='\n')
+
+
+def strings_task15():
+    """
+    На вход программе подаётся строка текста. 
+    Напишите программу, которая разрежет её на две равные части, переставит их местами и выведет на экран.
+    """
+
+    s = input()
+    part_len = int(len(s) / 2)
+    addition = 1 if len(s) % 2 != 0 else 0
+    s_new = s[part_len + addition:] + s[:part_len + addition]
+
+    print(s_new)

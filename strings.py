@@ -32,3 +32,18 @@ def strings_task5():
 
     for i in range(len(animals)):
         print(f"{i + 1}) {animals[i]}")
+
+
+def strings_task6():
+    """
+    На вход программе подаётся одна строка состоящая из цифр. 
+    Напишите программу, которая считает сумму цифр данной строки.
+    """
+
+    nums = input()
+    sum = 0
+
+    for i in nums:
+        sum += int(i)
+    
+    print(sum)

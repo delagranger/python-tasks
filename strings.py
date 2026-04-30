@@ -89,3 +89,18 @@ def strings_task8():
     print(f"Символ + встречается {count_plus} раз")
     print(f"Символ * встречается {count_prod} раз")
 
+
+def strings_task9():
+    """
+    На вход программе подаётся одна строка. 
+    Напишите программу, которая определяет, сколько в ней пар одинаковых соседних символов.
+    """
+
+    string = input()
+    counter = 0
+
+    for i in range(1, len(string)):
+        if string[i] == string[i - 1]:
+            counter += 1
+        
+    print(counter)

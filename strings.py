@@ -10,3 +10,14 @@ def strings_task3():
         print(s[i])
 
 
+def strings_task3():
+    """
+    На вход программе подаются три строки: имя, фамилия и отчество 
+    (именно в таком порядке). 
+    Напишите программу, которая выводит инициалы человека.
+    """
+
+    name, surname, patron = input(), input(), input()
+
+    print(surname[0], name[0], patron[0], sep='')
+

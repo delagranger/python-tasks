@@ -174,3 +174,30 @@ def strings_task13():
 
     print(s_length, s_repeated, s_first_char, s_starter, 
           s_ending, s_reversed, s_cuted, sep='\n')
+
+
+def strings_task14():
+    """
+    На вход программе подаётся одна строка. Напишите программу, которая выводит:
+    - третий символ этой строки;
+    - предпоследний символ этой строки;
+    - первые пять символов этой строки;
+    - всю строку, кроме последних двух символов;
+    - все символы с чётными индексами;
+    - все символы с нечётными индексами;
+    - все символы в обратном порядке;
+    - все символы строки через один в обратном порядке, начиная с последнего.
+    """
+
+    s = input()
+    s_third_char = s[2]
+    s_pre_last = s[-2]
+    s_starter = s[:5]
+    s_cuted = s[:-2]
+    s_even_chars = s[::2]
+    s_odd_chars = s[1::2]
+    s_reversed = s[::-1]
+    s_reversed_and_cuted = s[::-2]
+
+    print(s_third_char, s_pre_last, s_starter, s_cuted, s_even_chars, 
+            s_odd_chars, s_reversed, s_reversed_and_cuted, sep='\n')

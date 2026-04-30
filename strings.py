@@ -47,3 +47,45 @@ def strings_task6():
         sum += int(i)
     
     print(sum)
+
+
+def strings_task7():
+    """
+    На вход программе подаётся одна строка. 
+    Напишите программу, которая выводит сообщение «Цифра» (без кавычек), 
+    если строка содержит цифру. В противном случае вывести сообщение «Цифр нет» (без кавычек).
+    """
+
+    string = input()
+    is_num = False
+
+    for i in string:
+        try:
+            int(i)
+            is_num = True
+            break
+        except ValueError:
+            continue
+
+    print("Цифра" if is_num else "Цифр нет")
+
+
+def strings_task8():
+    """
+    На вход программе подаётся одна строка. 
+    Напишите программу, которая определяет, сколько раз в строке встречаются символы + и *
+    """
+
+    string = input()
+    count_plus = 0
+    count_prod = 0
+
+    for i in string:
+        if i == '+':
+            count_plus += 1
+        elif i == '*':
+            count_prod += 1
+    
+    print(f"Символ + встречается {count_plus} раз")
+    print(f"Символ * встречается {count_prod} раз")
+

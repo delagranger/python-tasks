@@ -148,3 +148,29 @@ def strings_task12():
         print("YES")
     else:
         print("NO")
+
+
+def strings_task13():
+    """
+    На вход программе подаётся одна строка. Напишите программу, которая выводит:
+    - общее количество символов в строке;
+    - исходную строку, повторённую 3 раза;
+    - первый символ строки;
+    - первые три символа строки;
+    - последние три символа строки;
+    - строку в обратном порядке;
+    - строку с удалённым первым и последним символами.
+    """
+
+    s = input()
+
+    s_length = len(s)
+    s_repeated = s * 3
+    s_first_char = s[0]
+    s_starter = s[:3]
+    s_ending = s[-3:]
+    s_reversed = s[::-1]
+    s_cuted = s[1:-1]
+
+    print(s_length, s_repeated, s_first_char, s_starter, 
+          s_ending, s_reversed, s_cuted, sep='\n')

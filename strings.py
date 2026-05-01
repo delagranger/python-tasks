@@ -252,3 +252,18 @@ def strings_task18():
         print("YES")
     else:
         print("NO")
+    
+
+def strings_task19():
+    """
+    На вход программе подаётся строка. 
+    Напишите программу, которая подсчитывает количество буквенных символов в нижнем регистре.
+    """
+
+    s = input()
+    counter = 0
+
+    for i in s:
+        counter += 1 if i.islower() else 0
+
+    print(counter)

@@ -10,3 +10,4 @@
 Основной источник задач на данный момент - курсы на Stepik.
 1. ["Поколение Python": курс для начинающих](https://stepik.org/course/58852/syllabus)
 2. ["Поколение Python": курс для продвинутых](https://stepik.org/course/68343/syllabus)
+

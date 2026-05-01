@@ -215,3 +215,17 @@ def strings_task15():
     s_new = s[part_len + addition:] + s[:part_len + addition]
 
     print(s_new)
+
+
+def strings_task16():
+    """
+    На вход программе подаётся строка, состоящая из имени и фамилии человека, разделённых одним пробелом. 
+    Напишите программу, которая проверяет, что имя и фамилия начинаются с заглавной буквы.
+    """
+
+    s = input()
+
+    if s == s.title():
+        print("YES")
+    else:
+        print("NO")
